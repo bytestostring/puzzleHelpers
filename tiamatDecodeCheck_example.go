@@ -6,7 +6,7 @@ To use this program you should remove two "condition" lines in a file $GOROOT/sr
           return newCipherGeneric(key)
 	--- }
 
-and change "case" line in a file $GOROOT/src/crypto/aes/cipher_asm.go:
+and change "case" line in a file $GOROOT/src/crypto/aes/cipher.go:
 
 	func NewCipher(key []byte) (cipher.Block, error) {
 	...
